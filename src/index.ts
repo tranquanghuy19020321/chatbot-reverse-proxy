@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Gemini API Configuration
-const GEMINI_API_KEY = 'AIzaSyAYldlh0APkI9grXaPjjCmR8svchU7F3yU';
+const GEMINI_API_KEY = process.env.PORTFOLIO_GEMINI_API_KEY || '';
 const ai = new GoogleGenerativeAI(GEMINI_API_KEY);
 
 // Middleware
